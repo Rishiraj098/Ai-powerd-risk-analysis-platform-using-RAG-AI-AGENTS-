@@ -14,6 +14,17 @@ This platform ingests enterprise documents, converts them into a searchable know
 - Explainable risk outputs with references
 - Clean enterprise-style UI
 
+## How to Run the Project
+
+### Backend
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Start server:
+   uvicorn main:app --reload
+
+### Frontend
+1. Open index.html in browser
+2. Upload documents and query risks
 ---
 
 ## Tech Stack
@@ -29,6 +40,10 @@ This platform ingests enterprise documents, converts them into a searchable know
 User Query → Vector Search → Relevant Documents → LLM + Context → Explainable Risk Insight
 
 ---
+
+## Note
+This project focuses on demonstrating RAG-based system architecture.
+Current embeddings and risk scoring logic are simplified for academic demonstration and can be extended using production-grade models.
 
 ## Project Status
 🚧 Currently under active development  
